@@ -1,0 +1,173 @@
+.contain {
+	width: 100%;
+	min-width: 300px;
+    max-width: 1300px;
+    margin: 0 auto;
+	position: relative;
+	clear: both;
+}
+
+.row {
+	clear: both;
+	display: block;
+	overflow: hidden;	
+}
+
+*[class^="dec-"], *[class^="tw-"], *[class^="ft-"], *[class^="st-"] {
+	float: left;
+	display: block;
+}
+
+.col-fr {
+	float: right;
+}
+
+@for $i from 1 through 10 {
+	.dec-#{$i} {
+		width: ( 100% / 10 ) * $i;
+	}
+}
+
+@for $i from 1 through 12 {
+	.tw-#{$i} {
+		width: ( 100% / 12 ) * $i;
+	}
+}
+
+@for $i from 1 through 14 {
+	.ft-#{$i} {
+		width: ( 100% / 14 ) * $i;
+	}
+}
+
+@for $i from 1 through 16 {
+	.st-#{$i} {
+		width: ( 100% / 16 ) * $i;
+	}
+}
+
+*[class^="bs-p-"] { box-sizing: border-box; }
+
+@for $i from 0 through 10 {
+
+	$val: $i * 5;
+	.p-#{$val}, .bs-p-#{$val} { padding-left: #{$val}px; padding-right: #{$val}px; }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+	.des-fr { float: right; }
+
+}
+
+@media screen and (max-width: 1279px) {
+	
+	.lap-fr { float: right; }
+
+	@for $i from 1 through 10 {
+		.dec-lap-#{$i} {
+			width: ( 100% / 10 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 12 {
+		.tw-lap-#{$i} {
+			width: ( 100% / 12 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 14 {
+		.ft-lap-#{$i} {
+			width: ( 100% / 14 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 16 {
+		.st-lap-#{$i} {
+			width: ( 100% / 16 ) * $i;
+		}
+	}
+
+	@for $i from 0 through 10 {
+
+		$val: $i * 5;
+		.p-lap-#{$val}, .bs-p-#{$val} { padding-left: #{$val}px; padding-right: #{$val}px; }
+	
+	}
+
+}
+
+@media screen and (max-width: 999px) {
+	
+	.tab-fr { float: right; }
+
+	@for $i from 1 through 10 {
+		.dec-tab-#{$i} {
+			width: ( 100% / 10 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 12 {
+		.tw-tab-#{$i} {
+			width: ( 100% / 12 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 14 {
+		.ft-tab-#{$i} {
+			width: ( 100% / 14 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 16 {
+		.st-tab-#{$i} {
+			width: ( 100% / 16 ) * $i;
+		}
+	}
+
+	@for $i from 0 through 10 {
+
+		$val: $i * 5;
+		.p-tab-#{$val}, .bs-p-#{$val} { padding-left: #{$val}px; padding-right: #{$val}px; }
+	
+	}
+
+}
+
+@media screen and (max-width: 719px) {
+	
+	.mob-fr { float: right; }
+
+	@for $i from 1 through 5 {
+		.dec-mob-#{$i} {
+			width: ( 100% / 5 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 6 {
+		.tw-mob-#{$i} {
+			width: ( 100% / 6 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 7 {
+		.ft-mob-#{$i} {
+			width: ( 100% / 7 ) * $i;
+		}
+	}
+	
+	@for $i from 1 through 8 {
+		.st-mob-#{$i} {
+			width: ( 100% / 8 ) * $i;
+		}
+	}
+	
+	@for $i from 0 through 10 {
+
+		$val: $i * 5;
+		.p-mob-#{$val}, .bs-p-#{$val} { padding-left: #{$val}px; padding-right: #{$val}px; }
+	
+	}
+
+}
